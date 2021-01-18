@@ -253,6 +253,7 @@ function onDocumentMouseUp( event )
 	isUserInteracting = false;
 }
 
+document.addEventListener('onclick', onDocumentMouseDown, false);
 document.addEventListener('mousedown', onDocumentMouseDown, false);
 document.addEventListener('mousemove', onDocumentMouseMove, false);
 document.addEventListener('mouseup', onDocumentMouseUp, false);
