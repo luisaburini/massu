@@ -1,0 +1,23 @@
+
+	html, body {
+		top: 0;
+		height: 100%;
+		text-align: center;
+		margin: 0;
+	}
+
+.cursorText {
+	/*font-family: 'Julius Sans One';*/
+	font-family: 'Mitr';
+	/*font-family: 'Saira';*/
+	font-size: 5vmax;	
+	position: absolute;
+	display: block;
+	color: #7e0d1f;
+	width: auto;
+	height: 6vmax;
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+}
