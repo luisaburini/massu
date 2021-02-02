@@ -259,6 +259,20 @@ function onDocumentMouseUp( event )
 	isUserInteracting = false;
 }
 
+function onResize() 
+{
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+
+				renderer.setSize( window.innerWidth, window.innerHeight );
+
+				insetWidth = window.innerHeight / 4; // square
+				insetHeight = window.innerHeight / 4;
+
+				camera2.aspect = insetWidth / insetHeight;
+				camera2.updateProjectionMatrix();
+}
+
 document.addEventListener('pointerdown', onDocumentMouseDown, false);
 document.addEventListener('mousedown', onDocumentMouseDown, false);
 document.addEventListener('pointermove', onDocumentMouseMove, false);
