@@ -1,6 +1,6 @@
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerWidth, window.innerHeight );
-renderer.setClearColor( 0xe89b01, 1 );
+renderer.setClearColor( 0x000000, 1 );
 document.body.appendChild( renderer.domElement );
 
 const scene = new THREE.Scene();
@@ -30,7 +30,8 @@ scene.add( spotLight );*/
 scene.add(light);
 
 
-const colorPallete = [0x451d15, 0x6c4325, 0x652317, 0x451d15, 0x1f391d, 0xd0a875, 0xb08149, 0x2f182c, 0x6c4325, 0x652317 ];
+//const colorPallete = [0x451d15, 0x6c4325, 0x652317, 0x451d15, 0x1f391d, 0xd0a875, 0xb08149, 0x2f182c, 0x6c4325, 0x652317 ];
+const colorPallete = [ 0x5d9e19, 0xffb60c, 0x4600e0, 0xff009f ];
 
 const callbacks = [cube1Callback, cube2Callback, cube3Callback];
 var callbackI = 0;
@@ -80,7 +81,12 @@ function generatePenetraveis()
 		
 		// wireframe
 		var geo = new THREE.EdgesGeometry( mesh.geometry ); // or WireframeGeometry
-		var mat = new THREE.LineBasicMaterial( { color: 0x7e0d1f, linewidth: 2 } );
+		var mat = new THREE.LineBasicMaterial( {
+						color: 0xffffff,
+						linewidth: 0.1,
+						linecap: 'round', //ignored by WebGLRenderer
+						linejoin:  'round' //ignored by WebGLRenderer
+					} );
 		var wireframe = new THREE.LineSegments( geo, mat );
 		mesh.add( wireframe );
 	}
@@ -89,7 +95,7 @@ function generatePenetraveis()
 
 
 var cursorTextElem = document.getElementById("cursorText");
-var pageItems = ["Portfólio", "Loja", "Quem sou"];
+var pageItems = ["PORTFÓLIO", "LOJA", "QUEM SOU"];
 
 function cube1Callback()
 {
