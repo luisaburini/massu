@@ -5,15 +5,30 @@
 		text-align: center;
 		margin: 0;
 	}
+	
+	.title {
+	font-size: 5vmax;	
+	font-family: 'Karla';
+	position: absolute;
+	color: #ffffff;
+	width: 50vw;
+	height: 6vmax;
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+	top: 0;
+	left: 25vw;
+	}
 
 .cursorText {
 	/*font-family: 'Julius Sans One';*/
-	font-family: 'Mitr';
+	font-family: 'Karla';
 	/*font-family: 'Saira';*/
-	font-size: 5vmax;	
+	font-size: 3vmax;	
 	position: absolute;
 	display: block;
-	color: #7e0d1f;
+	color: #ffffff;
 	width: auto;
 	height: 6vmax;
 	-webkit-user-select: none; /* Safari */        
