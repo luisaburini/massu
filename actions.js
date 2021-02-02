@@ -31,7 +31,7 @@ scene.add(light);
 
 
 //const colorPallete = [0x451d15, 0x6c4325, 0x652317, 0x451d15, 0x1f391d, 0xd0a875, 0xb08149, 0x2f182c, 0x6c4325, 0x652317 ];
-const colorPallete = [ 0x5d9e19, 0xffb60c, 0x4600e0, 0xff009f ];
+const colorPallete = [ 0x5f8a33, 0xdb9900, 0x4600e0, 0xff009f ];
 
 const callbacks = [cube1Callback, cube2Callback, cube3Callback];
 var callbackI = 0;
